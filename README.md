@@ -20,6 +20,10 @@ stages
     2 services depends on third
     all 3 workspaces
   
-  two
+  two (done)
     4th service nest
     two depends on
+  
+  three
+    add database module
+    add config module

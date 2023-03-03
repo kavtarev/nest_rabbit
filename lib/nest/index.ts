@@ -15,6 +15,7 @@ export {
 export * from '@nestjs/common';
 export * from '@nestjs/schedule';
 export * from '@nestjs/throttler';
+export * as NestConfig from '@nestjs/config';
 export {
   EntityRepository,
   Column,

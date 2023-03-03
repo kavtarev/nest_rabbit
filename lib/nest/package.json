@@ -33,8 +33,9 @@
     "@nestjs/testing": "9.3.9",
     "@nestjs/microservices": "9.3.9",
     "@nestjs/cqrs": "9.0.3",
-    "@nestjs/typeorm": "9.0.1",
-    "@nestjs/swagger": "6.2.1"
+    "@nestjs/typeorm": "9.0.0",
+    "@nestjs/swagger": "6.2.1",
+    "@nestjs/config": "2.3.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
