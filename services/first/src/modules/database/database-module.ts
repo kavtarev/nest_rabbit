@@ -10,7 +10,7 @@ import { dbConfig } from '../config/config';
       useFactory: (config: NestConfig.ConfigType<typeof dbConfig>) => ({
         type: 'postgres',
         host: config.host,
-        port: config.port,
+        port: +config.port,
         database: config.database,
         username: config.username,
         password: config.password,

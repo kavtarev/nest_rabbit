@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run:1": "cd services/first/build && node index.js",
-    "run:2": "cd services/second/build && node index.js"
+    "start:1": ". env/dev && cd services/first && tsc && cd build && node main.js",
+    "start:2": ". env/dev && cd services/second && tsc && cd build && node main.js"
   },
   "repository": {
     "type": "git",

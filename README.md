@@ -24,6 +24,11 @@ stages
     4th service nest
     two depends on
   
-  three
+  three (done)
     add database module
     add config module
+  
+  four (done)
+    add scripts to build and run
+    add bash env script
+
