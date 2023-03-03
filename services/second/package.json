@@ -1,0 +1,19 @@
+{
+  "name": "@nest_rabbit/second",
+  "version": "0.0.1",
+  "description": "second service",
+  "main": "build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "exports": {
+    ".": "./build/index.js" 
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@nest_rabbit/common": "0.0.1"
+  }
+}

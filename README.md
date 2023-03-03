@@ -1,4 +1,4 @@
-# nest_rabbit_prisma
+# nest_rabbit
 
 # architecture:
 
@@ -10,7 +10,12 @@
   common
 
 
-# goals
+# global goals
   make workspaces work
   redone global nest search
   ci
+
+stages
+  one
+    2 services depends on third
+    all 3 workspaces

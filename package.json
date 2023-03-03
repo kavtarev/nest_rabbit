@@ -1,0 +1,36 @@
+{
+  "name": "nest_rabbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:1": "cd services/first/build && node index.js",
+    "run:2": "cd services/second/build && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavtarev/nest_rabbit_prisma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kavtarev/nest_rabbit_prisma/issues"
+  },
+  "homepage": "https://github.com/kavtarev/nest_rabbit_prisma#readme",
+  "private": "true",
+  "type": "module",
+  "workspaces": [
+    "./lib/*",
+    "./services/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
