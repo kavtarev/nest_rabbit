@@ -1,8 +1,8 @@
 # nest_rabbit_prisma
 
-architecture:
+# architecture:
 
-workspaces
+# workspaces
   nest
   service_1
   service_2
@@ -10,7 +10,7 @@ workspaces
   common
 
 
-goals
+# goals
   make workspaces work
   redone global nest search
   ci
