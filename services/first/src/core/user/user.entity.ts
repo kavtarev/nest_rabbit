@@ -7,4 +7,7 @@ export class UserEntity {
 
   @Column('text')
   name: string;
+
+  @Column('bool')
+  checkPassed: boolean;
 }

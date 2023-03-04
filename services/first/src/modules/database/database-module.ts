@@ -1,8 +1,8 @@
 import { Module, TypeOrmModule, NestConfig } from '@nest_rabbit/nest';
-import { TrialEntity } from '../../core/trial/trial.entity';
 import { UserEntity } from '../../core/user/user.entity';
 import { dbConfig } from '../config/config';
 import { CreateUser1677918781513 } from './migrations/1677918781513-create-user';
+import { AddCheckPassed1677920812623 } from './migrations/1677920812623-AddCheckPassed';
 
 @Module({
   imports: [
@@ -17,7 +17,7 @@ import { CreateUser1677918781513 } from './migrations/1677918781513-create-user'
         username: config.username,
         password: config.password,
         entities: [UserEntity],
-        migrations: [CreateUser1677918781513],
+        migrations: [CreateUser1677918781513, AddCheckPassed1677920812623],
         synchronize: false,
         migrationsRun: true,
       }),

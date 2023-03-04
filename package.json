@@ -24,12 +24,22 @@
     "./lib/*",
     "./services/*"
   ],
+  "dependencies": {
+    "class-transformer": "0.5.1",
+    "class-validator": "^0.14.0",
+    "pg": "8.9.0"
+  },
   "devDependencies": {
     "@types/node": "^18.14.5",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.35.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-plugin-import": "^2.27.5",
+    "@types/jest": "28.1.0",
+    "nodemon": "^2.0.21",
+    "ts-jest": "28.0.4",
+    "ts-node": "10.9.1",
+    "typeorm": "0.2.37"
   }
 }
