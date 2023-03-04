@@ -1,13 +1,18 @@
-import { Module, TypeOrmModule } from '@nest_rabbit/nest';
-import { TrialEntity } from './src/core/trial/trial.entity';
+import {
+  APP_PIPE, Module, TypeOrmModule, ValidationPipe,
+} from '@nest_rabbit/nest';
+import { UserEntity } from './src/core/user/user.entity';
 import { ConfigModule } from './src/modules/config/config-module';
 import { DatabaseModule } from './src/modules/database/database-module';
-import { TrialController } from './src/usecases/trial-module/trial.controller';
-import { TrialUsecase } from './src/usecases/trial-module/trial.usecase';
+import { CreateUserController } from './src/usecases/create-user/create-user.controller';
+import { CreateUserUsecase } from './src/usecases/create-user/create-user.usecase';
 
 @Module({
-  imports: [ConfigModule, DatabaseModule, TypeOrmModule.forFeature([TrialEntity])],
-  controllers: [TrialController],
-  providers: [TrialUsecase],
+  imports: [ConfigModule, DatabaseModule, TypeOrmModule.forFeature([UserEntity])],
+  controllers: [CreateUserController],
+  providers: [CreateUserUsecase, {
+    provide: APP_PIPE,
+    useFactory: () => new ValidationPipe(),
+  }],
 })
 export class AppModule {}

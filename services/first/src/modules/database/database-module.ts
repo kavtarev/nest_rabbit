@@ -1,6 +1,8 @@
 import { Module, TypeOrmModule, NestConfig } from '@nest_rabbit/nest';
 import { TrialEntity } from '../../core/trial/trial.entity';
+import { UserEntity } from '../../core/user/user.entity';
 import { dbConfig } from '../config/config';
+import { CreateUser1677918781513 } from './migrations/1677918781513-create-user';
 
 @Module({
   imports: [
@@ -14,8 +16,10 @@ import { dbConfig } from '../config/config';
         database: config.database,
         username: config.username,
         password: config.password,
-        entities: [TrialEntity],
-        synchronize: true,
+        entities: [UserEntity],
+        migrations: [CreateUser1677918781513],
+        synchronize: false,
+        migrationsRun: true,
       }),
     })],
 })

@@ -1,8 +1,6 @@
 # nest_rabbit
 
 # architecture:
-
-# workspaces
   nest
   service_1
   service_2
@@ -12,7 +10,8 @@
 
 # global goals
   make workspaces work
-  redone global nest search
+  redone global nest search (all controllers, providers, etc)
+  rabbit module
   ci
 
 stages
@@ -31,4 +30,8 @@ stages
   four (done)
     add scripts to build and run
     add bash env script
-
+  
+  five
+    migrations
+    usecases
+    pipes

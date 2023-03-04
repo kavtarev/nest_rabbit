@@ -1,13 +1,13 @@
 import { Module, TypeOrmModule } from '@nest_rabbit/nest';
-import { TrialEntity } from './src/core/trial/trial.entity';
+import { CheckEntity } from './src/core/check/check.entity';
 import { ConfigModule } from './src/modules/config/config-module';
 import { DatabaseModule } from './src/modules/database/database-module';
-import { TrialController } from './src/usecases/trial-module/trial.controller';
-import { TrialUsecase } from './src/usecases/trial-module/trial.usecase';
+import { CheckController } from './src/usecases/check/check.controller';
+import { CheckUsecase } from './src/usecases/check/check.usecase';
 
 @Module({
-  imports: [ConfigModule, DatabaseModule, TypeOrmModule.forFeature([TrialEntity])],
-  controllers: [TrialController],
-  providers: [TrialUsecase],
+  imports: [ConfigModule, DatabaseModule, TypeOrmModule.forFeature([CheckEntity])],
+  controllers: [CheckController],
+  providers: [CheckUsecase],
 })
 export class AppModule {}
