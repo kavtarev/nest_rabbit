@@ -31,7 +31,10 @@ stages
     add scripts to build and run
     add bash env script
   
-  five
+  five (done)
     migrations
     usecases
     pipes
+  
+  six
+    add metrics

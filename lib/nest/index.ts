@@ -61,8 +61,11 @@ export {
   QueryFailedError,
 } from 'typeorm';
 
-export { TypeOrmModule, InjectRepository, getRepositoryToken } from '@nestjs/typeorm';
-
+export {
+  TypeOrmModule,
+  InjectRepository,
+  getRepositoryToken,
+} from '@nestjs/typeorm';
 
 export {
   EventsHandler,
@@ -72,7 +75,11 @@ export {
   IEventHandler,
 } from '@nestjs/cqrs';
 
-export { FileInterceptor, FilesInterceptor, MulterModule } from '@nestjs/platform-express';
+export {
+  FileInterceptor,
+  FilesInterceptor,
+  MulterModule,
+} from '@nestjs/platform-express';
 
 export * from '@nestjs/swagger';
 export * from '@nestjs/microservices';
