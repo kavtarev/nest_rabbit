@@ -12,3 +12,7 @@ export const promConfig = NestConfig.registerAs('promConfig', () => ({
   port: process.env.PROM_PORT || 5,
   disabled: process.env.PROM_DISABLED,
 }));
+
+export const rabbitConfig = NestConfig.registerAs('rabbitConfig', () => ({
+  amqpUrl: process.env.RABBIT_AMQP_URL,
+}));

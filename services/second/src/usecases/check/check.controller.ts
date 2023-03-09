@@ -9,7 +9,7 @@ export class CheckController {
 
   @Get('trial')
   async execute() {
-    const check = await this.usecase.execute('ss');
-    return check;
+    // const check = await this.usecase.execute('ss');
+    return 'check';
   }
 }

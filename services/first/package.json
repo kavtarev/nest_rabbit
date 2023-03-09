@@ -19,6 +19,7 @@
   "dependencies": {
     "@nest_rabbit/metrics": "0.0.1",
     "@nest_rabbit/common": "0.0.1",
+    "@nest_rabbit/rabbit": "0.0.1",
     "@nest_rabbit/nest": "0.0.1",
     "reflect-metadata": "0.1.13"
   }

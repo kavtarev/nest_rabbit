@@ -7,3 +7,7 @@ export const dbConfig = NestConfig.registerAs('dbConfig', () => ({
   username: process.env.DATABASE_USERNAME,
   password: process.env.DATABASE_PASSPORT,
 }));
+
+export const rabbitConfig = NestConfig.registerAs('rabbitConfig', () => ({
+  amqpUrl: process.env.RABBIT_AMQP_URL,
+}));

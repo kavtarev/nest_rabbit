@@ -31,7 +31,7 @@ export class CreateUserController {
   async execute(
     @Body() dto: CreateUserDto,
   ) {
-    // const user = await this.usecase.execute(dto.name);
+    const user = await this.usecase.execute(dto.name);
     return 'user';
   }
 }
