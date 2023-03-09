@@ -36,5 +36,8 @@ stages
     usecases
     pipes
   
-  six
+  six (done)
     add metrics
+
+  seven (done)
+    add rabbit
