@@ -19,9 +19,7 @@ export class VerifyUserUsecase {
 
   async doSome(msg: ConsumeMessage) {
     const queueResult = JSON.parse(msg.content.toString());
-    this.logger.log(queueResult);
     await this.repo.save({ id: queueResult.id, checkPassed: true });
-    this.channel.ack(msg);
-    const res = await this.channel.ack(msg);
+    await this.channel.ack(msg);
   }
 }

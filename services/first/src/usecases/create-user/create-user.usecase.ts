@@ -18,6 +18,5 @@ export class CreateUserUsecase {
   async execute(name: string) {
     const user = await this.repo.save({ name, id: randomUUID(), checkPassed: false });
     const res = await this.channel.publish(Queues.CHECK_USER, user);
-    this.logger.log('in create user', res);
   }
 }
