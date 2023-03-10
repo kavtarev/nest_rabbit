@@ -1,16 +1,16 @@
 {
-  "name": "@nest_rabbit/common",
-  "version": "0.0.1",
-  "description": "common stuff",
-  "main": "build/index.js",
-  "types": "./build/index.d.ts",
-  "files": [
-    "build"
-  ],
-  "exports": {
-    ".": "./build/index.js" 
-  },
-  "private":"true",
-  "author": "",
-  "license": "ISC"
+    "name": "@nest_rabbit/common",
+    "version": "0.0.1",
+    "description": "common stuff",
+    "main": "build/index.js",
+    "types": "./build/index.d.ts",
+    "files": [
+        "build"
+    ],
+    "exports": {
+        ".": "./build/index.js"
+    },
+    "private": "true",
+    "author": "",
+    "license": "ISC"
 }

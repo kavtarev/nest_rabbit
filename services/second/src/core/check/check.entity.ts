@@ -2,9 +2,9 @@ import { Column, Entity, PrimaryGeneratedColumn } from '@nest_rabbit/nest';
 
 @Entity({ name: 'check_users' })
 export class CheckEntity {
-  @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn('uuid')
     id: string;
 
-  @Column('text')
+    @Column('text')
     userId: string;
 }

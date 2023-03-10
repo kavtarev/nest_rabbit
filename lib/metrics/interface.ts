@@ -1,4 +1,4 @@
 export interface IMetrics {
-  port: number;
-  disabled: boolean;
+    port: number;
+    disabled: boolean;
 }

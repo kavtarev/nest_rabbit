@@ -2,12 +2,12 @@ import { Column, Entity, PrimaryColumn } from '@nest_rabbit/nest';
 
 @Entity({ name: 'user' })
 export class UserEntity {
-  @PrimaryColumn('text')
-  id: string;
+    @PrimaryColumn('text')
+    id: string;
 
-  @Column('text')
-  name: string;
+    @Column('text')
+    name: string;
 
-  @Column('bool')
-  checkPassed: boolean;
+    @Column('bool')
+    checkPassed: boolean;
 }

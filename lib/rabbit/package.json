@@ -1,21 +1,20 @@
 {
-  "name": "@nest_rabbit/rabbit",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
-  "scripts": {
-  },
-  "dependencies": {
-    "name": "@nest_rabbit/nest"
-  },
-  "main": "build/index.js",
-  "types": "./build/index.d.ts",
-  "files": [
-    "build"
-  ],
-  "exports": {
-    ".": "./build/index.js" 
-  }
+    "name": "@nest_rabbit/rabbit",
+    "version": "0.0.1",
+    "description": "",
+    "author": "",
+    "private": true,
+    "license": "UNLICENSED",
+    "scripts": {},
+    "dependencies": {
+        "name": "@nest_rabbit/nest"
+    },
+    "main": "build/index.js",
+    "types": "./build/index.d.ts",
+    "files": [
+        "build"
+    ],
+    "exports": {
+        ".": "./build/index.js"
+    }
 }

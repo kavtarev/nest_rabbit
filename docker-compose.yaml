@@ -1,37 +1,36 @@
-version: "3.3"
+version: '3.3'
 
 services:
-  prometheus:
-    image: prom/prometheus:latest
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
-    ports:
-      - '9090:9090'
+    prometheus:
+        image: prom/prometheus:latest
+        volumes:
+            - ./prometheus.yml:/etc/prometheus/prometheus.yml
+        command:
+            - '--config.file=/etc/prometheus/prometheus.yml'
+        ports:
+            - '9090:9090'
 
-  grafana:
-    image: grafana/grafana:latest
-    container_name: monitoring_grafana
-    restart: unless-stopped
-    links:
-      - prometheus:prometheus
-    volumes:
-      - graphana:/var/lib/grafana
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=12345
-    ports:
-      - '3333:3000'
+    grafana:
+        image: grafana/grafana:latest
+        container_name: monitoring_grafana
+        restart: unless-stopped
+        links:
+            - prometheus:prometheus
+        volumes:
+            - graphana:/var/lib/grafana
+        environment:
+            - GF_SECURITY_ADMIN_PASSWORD=12345
+        ports:
+            - '3333:3000'
 
-  rabbitmq:
-    image: 
-     rabbitmq:3.10.7-management
-    ports:
-      - '5672:5672'
-      - '15672:15672'
-    volumes:
-      - rabbit:/var/lib/rabbitmq/mnesia/
+    rabbitmq:
+        image: rabbitmq:3.10.7-management
+        ports:
+            - '5672:5672'
+            - '15672:15672'
+        volumes:
+            - rabbit:/var/lib/rabbitmq/mnesia/
 
 volumes:
-  graphana:
-  rabbit:
+    graphana:
+    rabbit:

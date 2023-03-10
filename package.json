@@ -1,49 +1,50 @@
 {
-  "name": "nest_rabbit",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start:1": ". env/dev && cd services/first && tsc && cd build && node main.js",
-    "start:2": ". env/dev && cd services/second && tsc && cd build && node main.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kavtarev/nest_rabbit_prisma.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kavtarev/nest_rabbit_prisma/issues"
-  },
-  "homepage": "https://github.com/kavtarev/nest_rabbit_prisma#readme",
-  "private": "true",
-  "type": "module",
-  "workspaces": [
-    "./lib/*",
-    "./services/*"
-  ],
-  "dependencies": {
-    "class-transformer": "0.5.1",
-    "class-validator": "^0.14.0",
-    "pg": "8.9.0",
-    "prom-client": "^14.1.1",
-    "amqp-connection-manager": "4.1.10",
-    "amqplib": "0.10.3"
-  },
-  "devDependencies": {
-    "@types/amqplib": "0.10.1",
-    "@types/jest": "28.1.0",
-    "@types/node": "^18.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
-    "@typescript-eslint/parser": "^5.54.0",
-    "eslint": "^8.35.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "nodemon": "^2.0.21",
-    "ts-jest": "28.0.4",
-    "ts-node": "10.9.1",
-    "typeorm": "0.2.37"
-  }
+    "name": "nest_rabbit",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:1": ". env/dev && cd services/first && tsc && cd build && node main.js",
+        "start:2": ". env/dev && cd services/second && tsc && cd build && node main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kavtarev/nest_rabbit_prisma.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kavtarev/nest_rabbit_prisma/issues"
+    },
+    "homepage": "https://github.com/kavtarev/nest_rabbit_prisma#readme",
+    "private": "true",
+    "type": "module",
+    "workspaces": [
+        "./lib/*",
+        "./services/*"
+    ],
+    "dependencies": {
+        "amqp-connection-manager": "4.1.10",
+        "amqplib": "0.10.3",
+        "class-transformer": "0.5.1",
+        "class-validator": "^0.14.0",
+        "pg": "8.9.0",
+        "prettier": "^2.8.4",
+        "prom-client": "^14.1.1"
+    },
+    "devDependencies": {
+        "@types/amqplib": "0.10.1",
+        "@types/jest": "28.1.0",
+        "@types/node": "^18.14.5",
+        "@typescript-eslint/eslint-plugin": "^5.54.0",
+        "@typescript-eslint/parser": "^5.54.0",
+        "eslint": "^8.35.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "nodemon": "^2.0.21",
+        "ts-jest": "28.0.4",
+        "ts-node": "10.9.1",
+        "typeorm": "0.2.37"
+    }
 }
